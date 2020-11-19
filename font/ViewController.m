@@ -15,6 +15,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //加了个测试信息
     // Do any additional setup after loading the view.
     
 //    NSArray *familyNames = [UIFont familyNames];
