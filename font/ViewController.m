@@ -15,6 +15,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //加了个测试信息
     // Do any additional setup after loading the view.
     
 //    NSArray *familyNames = [UIFont familyNames];
@@ -36,6 +37,16 @@
             }
             NSLog(@"\n\n");
         }
+    
+    for (NSString *familyname in [UIFont familyNames])
+    {
+        NSLog(@"family = %@",familyname);
+        for(NSString *fontName in [UIFont fontNamesForFamilyName:familyname])
+        {
+            NSLog(@"fontName = %@",fontName);
+        }
+        NSLog(@"\n\n");
+    }
     
     /*
       family = ChanYuMengXinTi
