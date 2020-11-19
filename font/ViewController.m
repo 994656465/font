@@ -38,6 +38,16 @@
             NSLog(@"\n\n");
         }
     
+    for (NSString *familyname in [UIFont familyNames])
+    {
+        NSLog(@"family = %@",familyname);
+        for(NSString *fontName in [UIFont fontNamesForFamilyName:familyname])
+        {
+            NSLog(@"fontName = %@",fontName);
+        }
+        NSLog(@"\n\n");
+    }
+    
     /*
       family = ChanYuMengXinTi
       fontName = CYMXT--GB1-0
